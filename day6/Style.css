@@ -1,0 +1,8 @@
+#bulb {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 20px;
+    border: 2px solid black;
+}
