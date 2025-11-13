@@ -1,0 +1,82 @@
+.app-root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #111;
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.app-header h1 {
+  color: #232f3e; /* Amazon-like dark blue */
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.product-card {
+  border: 1px solid #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+}
+.image-placeholder {
+  height: 120px;
+  background: linear-gradient(90deg,#eee,#fafafa);
+  display:flex;align-items:center;justify-content:center;margin-bottom:12px;color:#888
+}
+.price { font-weight:600; color:#b12704 }
+
+.product-image {
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:6px;
+  display:block;
+  margin-bottom:10px;
+}
+
+.app-footer { margin-top:24px; color:#666 }
+
+/* Topbar / header */
+.topbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 16px;
+  background: linear-gradient(180deg,#fff,#f7f7f7);
+  border-radius:8px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+.topbar-left { display:flex; align-items:center; gap:12px }
+.logo svg { display:block }
+.site-title { display:flex; flex-direction:column; line-height:1 }
+.site-title .brand { font-weight:700; color:#232f3e }
+.site-title .sub { font-size:11px; color:#666 }
+
+.topnav { display:flex; gap:12px; align-items:center }
+.nav-link { color:#111; text-decoration:none; padding:6px 10px; border-radius:6px }
+.nav-link:hover { background:#f0f0f0 }
+.nav-link .cart-icon { vertical-align:middle; margin-right:6px }
+
+.cart-badge {
+  display:inline-block;
+  margin-left:8px;
+  background:#b12704;
+  color:#fff;
+  padding:2px 6px;
+  border-radius:999px;
+  font-size:12px;
+  vertical-align:middle;
+}
+
+.product-title { font-size:15px; margin:6px 0 }
+.product-desc { color:#555; font-size:13px; margin:6px 0 10px }
+.add-btn { background:#ffd814; border:1px solid #f0c14b; padding:8px 10px; border-radius:6px; cursor:pointer }
+.add-btn:hover { filter:brightness(0.98) }
+
+@media (max-width:560px) {
+  .topbar { flex-direction:column; align-items:flex-start }
+  .topnav { width:100%; justify-content:space-between }
+}
